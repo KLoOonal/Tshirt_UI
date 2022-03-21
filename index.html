@@ -53,7 +53,42 @@ https://github.com/sno/unity-webgl-responsive
 
     </script>
     <script>
+      // send hex #fffff to change selected part color
+      function changeColorPart(hex){
+        myGameInstance.SendMessage("JSObject","ChangeColor",hex);   
+       }
+       // play button , auto rotate
+      function autoRotateObject(){
+        myGameInstance.SendMessage("JSObject","AutoRotate");   
+      }
+      // enable HUD
+      function enableHud(){
+        myGameInstance.SendMessage("JSObject","EnableHud");   
+      }
+      // disable HUD
+      function disableHud(){
+        myGameInstance.SendMessage("JSObject","DisbleHud");   
+      }
 
+      function cameraFocusFront(){
+        myGameInstance.SendMessage("JSObject","CameraFocusFront");   
+      }
+
+      function cameraFocusLeft(){
+        myGameInstance.SendMessage("JSObject","CameraFocusLeft");   
+      }
+
+      function cameraFocusRight(){
+        myGameInstance.SendMessage("JSObject","CameraFocusRight");   
+      }
+
+      function cameraFocusBack(){
+        myGameInstance.SendMessage("JSObject","CameraFocusBack");   
+      }
+      // reset camera to original position
+      function resetCamera(){
+        myGameInstance.SendMessage("JSObject","ResetCamera");   
+      }
 
     </script>
   </body>
