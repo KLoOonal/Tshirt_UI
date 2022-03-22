@@ -90,6 +90,26 @@ https://github.com/sno/unity-webgl-responsive
         myGameInstance.SendMessage("JSObject","EnableSideToolbar");   
       }
 
+      // change state to edit color
+      function setEditColorMode(){
+        myGameInstance.SendMessage("JSObject","SetEditModeColor");   
+      }
+
+      // change state to edit logo
+      function setEditModeLogo(){
+        myGameInstance.SendMessage("JSObject","SetEditModeLogo");   
+      }
+
+      // change state to normal mode
+      function setObserveMode(){
+        myGameInstance.SendMessage("JSObject","SetObserveMode");   
+      }
+
+      // change state to normal mode
+      function SetLogoNumber(index){
+        myGameInstance.SendMessage("JSObject","SetLogoNumber",index);   
+      }
+
       // zoom in
       function ZoomIn(){
         myGameInstance.SendMessage("JSObject","ZoomIn");   
