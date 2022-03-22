@@ -67,8 +67,39 @@ https://github.com/sno/unity-webgl-responsive
       }
       // disable HUD
       function disableHud(){
-        myGameInstance.SendMessage("JSObject","DisbleHud");   
+        myGameInstance.SendMessage("JSObject","DisableHud");   
       }
+
+      // disable only customize hud
+      function disableCustomizeHud(){
+        myGameInstance.SendMessage("JSObject","DisableCustomizeHud");   
+      }
+
+       // enable only customize hud
+       function enableCustomizeHud(){
+        myGameInstance.SendMessage("JSObject","EnableCustomizeHud");   
+      }
+
+      // disable only side tool bar
+      function disableSideToolbar(){
+        myGameInstance.SendMessage("JSObject","DisableSideToolbar");   
+      }
+
+       // enable only side tool bar
+       function enableSideToolbar(){
+        myGameInstance.SendMessage("JSObject","EnableSideToolbar");   
+      }
+
+      // zoom in
+      function ZoomIn(){
+        myGameInstance.SendMessage("JSObject","ZoomIn");   
+      }
+
+       // zoom out
+       function ZoomOut(){
+        myGameInstance.SendMessage("JSObject","ZoomOut");   
+      }
+
 
       function cameraFocusFront(){
         myGameInstance.SendMessage("JSObject","CameraFocusFront");   
